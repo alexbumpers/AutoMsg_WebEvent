@@ -1,0 +1,220 @@
+<html><head>
+<title>WebEvent - Event</title>
+<base href="http://webevent.shc.edu/webevent/htdocs/">
+<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+<script src="js/styleSelect.js" language="javascript1.2" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="style/webEventPC.css"><link rel="stylesheet" type="text/css" href="style/auxiliary.css">
+<script src="js/helpButton.js" language="javascript1.2" type="text/javascript"></script>
+<script language="javascript1.2" type="text/javascript">
+
+var ex = 'Export';
+
+function Submit(subcmd)
+{
+  document.forms['theForm'].subcmd.value = subcmd;
+  document.forms['theForm'].submit();
+}
+
+      function goDoIt(cmd)
+      {
+	if (opener)
+	{
+          opener.location.href = "http://webevent.shc.edu/webevent.plx?cmd=showevent&subcmd="+cmd+"&token=guest.6ba6516a0f10911bb28088aa1a00a98f&calID=1026&eventID=323936";
+          opener.focus();
+          self.close();
+	}
+	else
+	  self.location.href = "http://webevent.shc.edu/webevent.plx?cmd=showevent&subcmd="+cmd+"&token=guest.6ba6516a0f10911bb28088aa1a00a98f&calID=1026&eventID=323936";
+      }     
+
+      function goLink()
+      {
+	  self.location.href = "http://webevent.shc.edu/webevent.plx?cmd=showevent&subcmd=Link&token=guest.6ba6516a0f10911bb28088aa1a00a98f&calID=1026&eventID=323936";
+          if (opener) opener.location.reload();
+      }     
+
+function goDelete()
+{
+  if (!confirm('Delete this event?')) return;
+
+  opener.location.href = "http://webevent.shc.edu/webevent.plx?cmd=showevent&subcmd=Delete&token=guest.6ba6516a0f10911bb28088aa1a00a98f&calID=1026&eventID=323936";
+  if (opener) 
+  {
+    opener.focus();
+    self.close();
+  }
+}     
+
+      function goDone()
+      {
+        if (opener)
+	  self.close();
+	else
+	  self.history.back();
+      }     
+</script>
+</head>
+
+<body topmargin="5" leftmargin="5" marginheight="5" marginwidth="5">
+<table width="100%">
+  <tbody><tr>
+    <td width="50%">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+    
+          <td>
+            <a href="javascript: self.print()" onmouseover="document.wePrint.src=&quot;images/printOver.gif&quot;" onmouseout="document.wePrint.src=&quot;images/print.gif&quot;">
+              <img name="wePrint" src="images/print.gif" border="0" alt="Print"></a></td>
+    
+    
+          <td>
+            <a href="javascript: self.print()" class="toolbar" onmouseover="document.wePrint.src=&quot;images/printOver.gif&quot;" onmouseout="document.wePrint.src=&quot;images/print.gif&quot;">Print</a></td>
+    
+        </tr>
+      </tbody></table>
+    </td>
+    <td width="50%" align="right">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+    
+          <td>
+            <a href="javascript: Submit(ex)" onmouseover="document.weExport.src=&quot;images/exportEventOver.gif&quot;" onmouseout="document.weExport.src=&quot;images/exportEvent.gif&quot;">
+              <img name="weExport" src="images/exportEvent.gif" border="0" alt="Export"></a></td>
+    
+    
+          <td>
+            <a href="javascript: Submit(ex)" class="toolbar" onmouseover="document.weExport.src=&quot;images/exportEventOver.gif&quot;" onmouseout="document.weExport.src=&quot;images/exportEvent.gif&quot;">Export Event</a></td>
+    
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+    <form name="theForm" action="http://webevent.shc.edu/webevent.plx">
+      <input type="hidden" name="cmd" value="showevent">
+      <input type="hidden" name="subcmd">
+      <input type="hidden" name="token" value="guest.6ba6516a0f10911bb28088aa1a00a98f">
+      <input type="hidden" name="calID" value="1026">
+      <input type="hidden" name="eventID" value="323936">
+
+      
+
+      <table class="eventform" width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody><tr>
+          <td colspan="3"><img src="images/shim.gif" width="5" height="5" alt=""></td>
+        </tr>
+	<!--
+        <tr>
+          <td></td>
+          <th class='fieldLabel'>ID:</th>
+          <td>323936 </td>
+        </tr>
+	-->
+        
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top" width="20%">Title:</th>
+          <td>
+            Schoology Weekly Meeting 
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+        
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top">Date:</th>
+          <td>Jul 27, 2016</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+	
+          <tr>
+            <td>&nbsp;</td>
+            <th scope="row" class="fieldLabel" valign="top">Time:</th>
+            <td>11:45 AM -  1:15 PM</td>
+          </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+	
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top">Calendar:</th>
+          <td>BL210 Web Conferencing: (8)</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top">Contact:</th>
+          <td>
+
+            <a href="mailto:dspivey@shc.edu">Dwight Spivey</a></td>
+
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+
+        
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top">Categories:</th>
+          <td>Meeting</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+        
+
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="row" class="fieldLabel" valign="top">Description:</th>
+	  <td></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <img src="images/shim.gif" width="1" height="5" alt=""></td>
+        </tr>
+	
+	  
+	
+	  
+	
+        <tr>
+          <td colspan="3"><img src="images/shim.gif" width="5" height="5" alt=""></td>
+        </tr>
+      </tbody></table>
+
+      <img src="images/shim.gif" width="5" height="5" alt="">
+
+      <div align="center">
+      
+
+      
+
+      
+
+      
+      &nbsp; &nbsp;
+      <script language="javascript1.2">makeHelpButton("http://webevent.shc.edu/webevent/htdocs/", "showevent")</script>
+      </div>
+
+      
+
+
+    </form>
+  
+
+</body></html>
